@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Corpo da página com flexbox centralizado */
+body, html {
+  height: 100%;
+  font-family: 'lexend'
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.container {
+  height: 30vh;
+  display: flex;
+  justify-content: center; /* Alinha no eixo X (horizontal) */
+  align-items: flex-start; /* Alinha no topo do eixo Y (vertical) */
+  padding-top: 2rem;        /* Espaço do topo até o texto */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(to right, #000000, #000000);
+  text-align: center;
+  font-size: 3rem;     /* Tamanho da fonte */
+  color: #1500ff;      /* Cor escura (quase preta) */
+  .container {
+   white-space: normal; /* Garante que o texto possa quebrar a linha */
+  max-width: 600px; /* Limita a largura do conteúdo */
+  word-wrap: break-word; /* Quebra palavras longas */
+}
+
+}
+
+.miolo {
+  max-width: 1000px;       /* Largura máxima do texto */
+  margin: 0 auto;          /* Centraliza horizontalmente */
+  padding: 2rem 1rem; 
+  height: 30vh;
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  padding: 1.5rem;
+  background-color: #000000;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  color: #ffffff;
+  white-space: normal; /* Garante que o texto possa quebrar a linha */
+  word-wrap: break-word; /* Quebra palavras longas */
+  max-width: 1000px; /* Limita a largura do conteúdo */
+   line-height: 1.6;     /* Espaçamento entre linhas */
+  max-width: 700px;     /* Largura máxima do parágrafo */
+  margin: 0 auto;       /* Centraliza o bloco do parágrafo */
+  text-align: center;   /* Centraliza o texto dentro do parágrafo */
+  
+}
+
+
+.miolo1 {
+  max-width: 1000px;       /* Largura máxima do texto */
+  margin: 0 auto;          /* Centraliza horizontalmente */
+  padding: 2rem 1rem; 
+  height: 0vh;
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  padding: 1.5rem;
+  background-color: #000000;
+  font-size: 1.1rem;
+  color: #ffffff;
+   line-height: 1.6;     /* Espaçamento entre linhas */
+  max-width: 700px;     /* Largura máxima do parágrafo */
+  margin: 0 auto;       /* Centraliza o bloco do parágrafo */
+  text-align: center;   /* Centraliza o texto dentro do parágrafo */
+  
+}
+
+
+.gallery {
+  height: 100vh;
+  column-count: 4;           /* Número de colunas */
+  column-gap: 1rem;          /* Espaço entre as colunas */
+  padding: 1rem;
+  background: linear-gradient(to right, #000000, #000000);
+}
+
+.item {
+  break-inside: avoid;       /* Evita que quebre a imagem entre colunas */
+  margin-bottom: 1rem;
+  background: #ff006a;
+  border-radius: 19px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
